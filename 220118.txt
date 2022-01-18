@@ -1,0 +1,72 @@
+오늘 할 일 (계획)
+1. 머신러닝 프로젝트
+
+2. 알고리즘 강의 수강
+
+3. Django 강의 시작
+
+오늘 한 일 (회고)
+1.  머신러닝 프로젝트
+
+- 마무리 ec2 서버로 등록
+
+http://newmeta.shop/
+
+당신의 포켓몬은 : 포켓몬상 테스트
+
+newmeta.shop
+- 멘토님과 프로젝트 관련 상담 src 값 받아오지 못하는 현상 답변 받음
+
+reader.onload = function (e) {
+
+            $('.file-upload-input').hide();
+            $('.drag-text').hide();
+            $('#loading').show();
+
+
+            $('.file-upload-image').attr('src', e.target.result);
+
+            // console.log('ㅇㄹㅇㄹ')
+            // console.log(document.getElementById('face-image').getAttribute('src'))
+
+            $('.file-upload-image').show();
+            $('.file-upload-content').show();
+            $('.image-title').html(input.files[0].name);
+
+            init().then(function () {
+                console.log("hello");
+                predict().then()
+            });
+        };
+        
+함수의 위치를 변경하여 실행해보는 방법으로 해결하는 것을 제안 받음 
+
+서버에서 받을때는 base64 처리를 해서 사용할 수 있도록 
+
+base64_data = codecs.encode(img_binary.read(), 'base64')
+image = base64_data.decode('utf-8')
+
+- 해당 답변 내용을 이용하여 테스트 중 향후 서버를 이용한 작업 모델 1개 더 추가적으로 구현 예정
+
+2. 프로젝트 발표준비 보조
+
+- KPT 회고
+
+- 자료 정리 마무리
+
+2. 생활 코딩 강의 학습 일시 중단
+
+3. 자료구조, 알고리즘 3주차 수강 중
+
+내일 할 일
+1. Django 강의 시작
+
+- Django 특강 수강
+
+2. src 받아오지 못하는 현상 해결
+
+- 튜터님이 제안해 주신 방식 테스트
+
+3. 자료구조, 알고리즘 매일 3강씩 수강
+
+4. 마무리된 포켓몬상 프로젝트 모바일 환경 문제 해결
