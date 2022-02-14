@@ -1,0 +1,50 @@
+** 14일부터는 오늘 할 일 항목을 전날의 내일 할 일 항목을 참고하기로 하며 추가 작성하지 않도록 하겠습니다.
+
+오늘 한 일 (회고)
+1. 파이썬 장고 실무 5주차 완강
+- REST : API의 이름을 명명할 때 명사를 위주로 그리고 기능을 명시하고 싶을 경우에도 CRUD를 지켜서 생성하는 방법
+
+- asserEquals( 내가 기대하는 값, 실제 나오는 갑스 오류 시 나타내는 메시지)
+
+- 코드를 작성 할때 if를 많이 사용하는 것은 코드의 가독성을 나쁘게 만드는 주범이다.
+
+- versioning을 통하여 불필요한 if문 등을 막을 수 있고 기능의 복잡도를 줄일 수 있다.
+
+- 테스트 피라미드
+             =======
+---------===== e2e =====------------
+-========= intergration =========---
+============== unit ================
+
+- django debug server를 사용하면 성능과 보안에 문제가 생긴다.
+
+- 사고를 사전에 방지하기 위해서 일련의 쿼리가 모두 성공하거나, 아니면 모두 실패하도록 만드는 특성을 Atomicity라고 한다
+
+- MySQL 만으로 transaction
+
+START TRANSACTION;
+    INSERT INTO tab_innodb (fdpk) VALUES (1),(2),(3);
+    INSERT INTO tab_innodb (fdpk) VALUES (1),(2),(3);
+    INSERT INTO tab_innodb (fdpk) VALUES (1),(2),(3);
+COMMIT;
+- ATOMIC_REQUEST
+
+DATABASES = {
+    "default": {
+        "ATOMIC_REQUESTS": True,
+        "ENGINE": "django.db.backends.mysql",
+        "NAME": "sparta",
+        "USER": "root",
+        "PASSWORD": "22380476",
+        "HOST": "localhost",
+        "PORT": "3306",
+    }
+}
+- 데코레이터를 사용하는 방식
+
+@transaction.atomic
+def do_like(user_id: int, article_id: int) -> Like:
+내일 할 일
+1. 파이썬 장고 실무 복습하기
+
+2. 장고 클론 코딩 위주로 실습 시작하기
