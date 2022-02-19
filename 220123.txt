@@ -1,0 +1,49 @@
+오늘 할 일 (계획)
+1. src 받아온 것으로 기존 프로젝트에서 3번째 구조로 동작하는 구조 만들기
+
+- 클라이언트 구조
+
+- 서버 구조 ( 저장하는 방식 )
+
+- 서버 구조 ( 저장 안 하는 방식 )
+
+2. 자료구조, 알고리즘 매일 3강씩 수강
+
+3. 마무리된 포켓몬상 프로젝트 모바일 환경 문제 해결 - 지연중
+
+오늘 한 일 (회고)
+1. Django 강의 5-5까지 수강 완료 
+
+- 복습 중 
+
+2. 생활코딩 장고 강의 학습 시작
+
+3. 자료구조, 알고리즘 3강 수강
+
+내일 할 일
+1. 1. Django 강의 완강
+
+2. src 받아온 것으로 기존 프로젝트에서 3번째 구조로 동작하는 구조 만들기
+
+- 클라이언트 구조
+
+- 서버 구조 ( 저장하는 방식 )
+
+- 서버 구조 ( 저장 안 하는 방식 )
+
+3. 자료구조, 알고리즘 매일 3강씩 수강
+
+4. 마무리된 포켓몬상 프로젝트 모바일 환경 문제 해결 - 지연중
+
+sudo apt-get update
+git clone https://github.com/paullee714/mySpartaSns.git
+cd mySpartaSns
+sudo apt-get install python3-pip -y
+
+pip3 install django django-taggit django-taggit-templatetags2
+
+python3 manage.py makemigrations
+
+python3 manage.py migrate
+
+python3 manage.py runserver 0.0.0.0:8000
