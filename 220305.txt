@@ -1,0 +1,108 @@
+오늘 한 일 (회고)
+1. 백준 알고리즘 문제 풀이
+- 15552
+
+2.  Docker 2주 차 강의 완강
+내용 정리
+- 몽고 디비 사용하기 : 생성
+
+docker run --name mongo_db -p 27017:27017 -d mongo
+Robo 3T를 사용해서 DB에 데이터 작성 용의
+docker ps 명령어로 process 실행 상황 확인 가능
+- named volume 사용해서 DB 데이터 유지하기 : 유지
+
+docker volume create memo (memo라는 볼륨을 생성함)
+docker volume inspect memo (memo 볼륨의 정보를 볼 수 있음)
+-mongodb에 named volume 연결 : 연결
+
+docker run -p 27017:27017 -v memo:/data/db mongo
+
+몽고 디비와 앱을 연결하여 필요한 정보가 volume에 저장되어 남아있게 함, 재실행하였을대 위 명령어를 쳐주게 되면 종료 시 사라졌던 데이터를 다시 부를 수 있음
+
+Docker bind mount는 새로 이미지를 생성하고 컨테이너를 다시 띄우는 작업을 줄여주는 기법이다.
+
+- bing mount 명령어
+
+docker run -v "$(pwd)/templates:/templates" -p 80:5000 nmdkims/docker-memo:version2
+위 방법대로 실행을 하게 되면 도커에 있는 이미지를 이용하여 서버를 띄워놓은 상태에서도 파이 참에서 실행한 것 같이 html 파일 변경사항이 이미지 생성하여 재실행을 하지 않았는데도 불구하고 실행되는 것을 볼 수 있다.
+
+- Docker network
+
+Docker 안에서 여러 개의 container 연결하기 중요한 개념
+docker network create memo
+docker run -d -p 27017:27017 --network memo --network-alias mongo mongo (강의 자료 이상함)
+docker run -it --network memo nicolaka/netshoot (네트워크가 제대로 설정되었는지 확인하는 툴)
+app.py에 DB link의 localhost -> mongo로 변경 여기서는 위에 alias mongo설정이 선행되어야 함
+docker build -t nmdkims/docker-memo:version3. (이미지를 다시 생성)
+docker run -d -p 80:5000 --network memo nmdkims/docker-memo:version3 (실행 시 nework를 분여서 실행)
+- Docker container의 리소스 사용량 제한
+
+리소스 사용량 제한이 없으면 한 개의 컨테이너에서 cpu의 모든 리소스를 사용하여 다른 container가 실행되지 않을 수도 memory가 부족할 때 자동으로 종료되는 process에서 정말 필요한 process가 있을 수도 또 이것과는 다르지만 다른 문제가 생길 수 있다.
+docker run -i -m 10m python:3.8
+docker run -i --cpus=0.5 python:3.8
+- Docker compose 여러 컨테이너를 편리하게 실행
+
+docker-compose up -d
+cocker-compost down
+version: "3.9"
+
+services:
+  flask:
+    build:
+      context: .
+    ports:
+    - 5000:5000
+#--------------- 위에 내용 만들어서 사용 -------------
+  mongo:
+    image: mongo
+    ports:
+      - 27017:27017
+#--------------- 이미 있는 이미지를 사용 -------------
+
+- Volume을 추가하여 저장 내용 유지시키기 yaml을 이용
+
+version: "3.9"
+
+services:
+  flask:
+    build:
+      context: .
+    volumes:
+      - ./templates:/templates
+    ports:
+    - 5000:5000
+#--------------- 위에 내용 만들어서 사용 -------------
+  mongo:
+    image: mongo
+    volumes:
+      - mongo:/data/db
+    ports:
+      - 27017:27017
+#--------------- 이미 있는 이미지를 사용 -------------
+volumes:
+  mongo:
+#--------------- 위 두줄 갑자기 적은 이유 물어보기 -------------
+- 사용하지 않는 리소스 정리하기
+
+rm
+docker system prune -a
+- TIP
+
+#FROM python:3.8
+FROM python:3.8-slim
+이미지를 만들 때 실행에 필요한 내용만 포함한 슬림 베이스 이미지를 사용하면 작은 용량으로 만들 수 있고 이는 속도 향상과 이어질 수 있다.
+
+다른 축소 방법으로 multistage build 활용이 있다.
+
+내일 할 일
+1. 백준 알고리즘 문제 풀기
+
+2. 티스토리 블로그에 TIL을 올리면 자동으로 Github에 올라갈 수 있게 만들기
+
+3. 장고 클론 코딩 위주로 실습 시작하기
+
+4. 파이썬 장고 실무 복습하기
+
+- 파이썬 기초 복습 특강 공부 후
+
+5. DOCKER 강의 3주 차 완강
