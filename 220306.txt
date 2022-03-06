@@ -1,0 +1,51 @@
+오늘 한 일 (회고)
+1. 백준 알고리즘 문제 풀이
+- 1546
+
+2.  Docker 3주 차 강의 완강
+내용 정리
+- AWS 설정
+
+기존 설정 한 내용으로 대체
+기존에는 EC2 접속을 git bash를 이용하고 filezilla를 이용하여 작업하였었는데 이번에는 putty 자료 보고 알아서 깔고 작업하라고 하여서 기존 방식대로 하기로 결정
+
+- Server에서 Docker 설치 하기
+
+위에 말한 내용대로 putty는 과감히 사용하지 않고 git bash를 이용하였지만 permission denied 문제 발생
+해결방법으로는 새로 발급받은 pem 키를 읽기 전용으로 바꾸고 명령어를 dns 사용하는 방식으로
+ssh -i "/c/Users/Administrator/Desktop/sparta_lecture/web_upload/nmddocker.pem" ec2-user@ec2-3-34-136-104.ap-northeast-2.compute.amazonaws.com 바꿔서 해결
+
+docker-compose up -d
+
+- CI/CD 개념
+
+Continuous Integration : 여러 개발자들이 함께 개발을 할 때 코드가 잘 작동하는지 확인
+
+Continuous Deployment : 반영된 소스코드가 실제 서비스에 자동으로 반영되게 하는 것
+
+- github action
+
+github action를 정의하는 기본 6가지 용어
+Workflows: 자동화 하려고 하는 과정
+한 개 또는 여러 개의 job으로 구성되며, event에 의해서 시작
+빌드, 테스트, 릴리즈, 배포 등의 작업이라고 생각
+Events : workflow를 trigger 되는 행동
+push, pull request, cronjob 등
+Jobs: 동일한 runner에서 실행하려고하는 여러 개의 step
+Steps: job을 구성하는 한개의 커맨드로 action이거나 shell command로 구성
+Actions: 다른 곳에서 정의된 커맨드
+Runner: Job이 실행되는 환경
+
+실습 완료
+내일 할 일
+1. 백준 알고리즘 문제 풀기
+
+2. 티스토리 블로그에 TIL을 올리면 자동으로 Github에 올라갈 수 있게 만들기
+
+3. 장고 클론 코딩 위주로 실습 시작하기
+
+4. 파이썬 장고 실무 복습하기
+
+- 파이썬 기초 복습 특강 공부 후
+
+5. 프로젝트 아이디어 회의
