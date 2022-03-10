@@ -1,0 +1,27 @@
+오늘 한 일 (회고)
+1. 백준 알고리즘 문제 풀이
+- 2447
+
+2. git 개발환경 공유
+
+3. 깃 실습자료 작성 및 배포
+https://dawnpast12.tistory.com/entry/%EA%B0%9C%EB%B0%9C-%EC%85%8B%ED%8C%85-%ED%9B%84-%EC%8B%A4%EC%8A%B5-%EC%B0%B8%EA%B3%A0-%EC%9E%90%EB%A3%8C﻿
+개발 셋팅 후 실습 참고 자료
+
+선행 조건 : 작업 환경 셋팅 - Team repo 연결 확인 할 것 : git remote -v 기대 결과 : origin  https://github.com/본인깃아이디/greendoor.git (fetch)              origin  https:..
+dawnpast12.tistory.com
+
+내일 할 일
+1. 백준 알고리즘 문제 풀기
+
+2. 티스토리 블로그에 TIL을 올리면 자동으로 Github에 올라갈 수 있게 만들기
+
+3. 장고 클론 코딩 위주로 실습 시작하기
+
+4. 파이썬 장고 실무 복습하기
+- 파이썬 기초 복습 특강 공부 후
+
+5. 깃 브랜치 사용법 습득 및 장바구니 기능 구현
+
+
+
