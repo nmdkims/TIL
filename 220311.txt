@@ -1,0 +1,55 @@
+오늘 한 일 (회고)
+1. 백준 알고리즘 문제 풀이
+- 2798
+
+2. git 브랜치 사용법 학습
+브랜치생성
+git branch 브랜치이름
+
+브랜치전환
+git switch 브랜치이름
+
+브랜치삭제
+git branch -d 브랜치이름
+
+브랜치 생성 및 전환 동시에
+git switch -c 브랜치이름
+
+복원하기
+git restore 파일명
+
+이미 스테이지에 올라간 파일 복원하기
+git restore --staged 파일명
+
+3. 크롤러 ORM 사용하여 DB에 추가하기
+- 특이사항 pymysql을 이용한 쿼리문 사용
+
+db = pymysql.connect(
+    host=MY_DATABASES["default"]["HOST"],
+    port=3306,
+    user=MY_DATABASES["default"]["USER"],
+    passwd=MY_DATABASES["default"]["PASSWORD"],
+    db=MY_DATABASES["default"]["NAME"],
+    charset="utf8mb4",
+)
+
+cursor = db.cursor()
+cursor.execute("DELETE FROM plant_plant;")
+db.commit()
+time.sleep(2)
+db.close()
+time.sleep(3)
+내일 할 일
+1. 백준 알고리즘 문제 풀기
+
+2. 티스토리 블로그에 TIL을 올리면 자동으로 Github에 올라갈 수 있게 만들기
+
+3. 장고 클론 코딩 위주로 실습 시작하기
+
+4. 파이썬 장고 실무 복습하기
+- 파이썬 기초 복습 특강 공부 후
+
+5. 깃 브랜치 사용법 습득 및 장바구니 기능 구현
+
+
+
