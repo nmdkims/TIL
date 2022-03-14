@@ -1,0 +1,28 @@
+오늘 한 일 (회고)
+1. 백준 알고리즘 문제 풀이
+- 1010
+
+2. 장바구니 조각기능 구현 중
+- DB에 저장하는 방식과 session방식을 합쳐서 사용하는 방식으로 구현 중
+- 각각의 방식으로 학습하는 중
+
+user = request.user.is_authenticated
+
+if user:
+
+if request.user.is_authenticated:
+
+mypy는 데코레이터를 제대로 추적 못할 수도있다.
+
+def views(request : HttpRequest):
+       if not request.user.is_authenticated:
+                 return redirect(URL_LOGIN)
+
+위와 같이 사용하면 피할 수 있음
+
+내일 할 일
+1. 백준 알고리즘 문제 풀기
+
+2. 장바구니 조각 기능 구현 완성
+
+3. iamport 사용방법 숙지
