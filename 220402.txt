@@ -1,0 +1,21 @@
+오늘 한 일 (회고)
+1. 백준 알고리즘 문제 풀이
+- 18258
+
+2. EB 문제 해결 완료
+- SUB MODULE PATH 문제 aws_eb_cli 파일 폴더 지워서 하위. git패스 제거하여 해결
+- requirements.txt 직접 입력
+- static 경로 재설정
+- 패키지 버전 일부 수정
+
+3. profile image default값설정
+
+4. 검색 예제 학습
+
+5. google social login 구현
+- 일부 사용자는 가능하고 일부는 불가능한 문제 발생
+
+내일 할 일
+1. 백준 알고리즘 문제 풀기
+
+2. 최종 프로젝트 배포전 검색 기능 구현 완료
