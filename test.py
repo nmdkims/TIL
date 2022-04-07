@@ -1,14 +1,16 @@
 import sys
 
-sys.stdin = open("input.txt", 'r')
+N, M = map(int, sys.stdin.readline().split())
+matrixA = [list(map(int, sys.stdin.readline().split())) for _ in range(N)]
 
+M, K = map(int, sys.stdin.readline().split())
+matrixB = [list(map(int, sys.stdin.readline().split())) for _ in range(M)]
 
-def get_best_mas_sal(n):
-    ma = [list(map(int, input().split())) for i in range(n)]
-    ma.sort(reverse=True, key=lambda x: (x[0] / x[1], -x[1]))
+for n in range(N):
+    for k in range(K):
+        tmp = 0
+        for m in range(M):
+            tmp += matrixA[n][m] * matrixB[m][k]
 
-    return ma[0][1]
-
-
-for j in range(int(input())):
-    print(get_best_mas_sal(int(input())))
+        sys.stdout.write(str(tmp) + " ")
+    sys.stdout.write("\n")
