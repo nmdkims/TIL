@@ -1,0 +1,21 @@
+오늘 한 일 (회고)
+1. 백준 알고리즘 문제 풀이
+-  1010
+
+2. 네이버 검색 콜로키움 22 참석
+- AiRSEARCH: New NAVER Search based on Smart Blocks
+- User-centered Approach: Insight into Personalized Search Experience
+- Future of NAVER Search 등
+
+NAVER SEARCH COLLOQUIUM '22
+네이버는 검색 기술과 서비스를 통해 사용자 누구나 더 쉽고 편하게 네이버 서비스를 사용할 수 있도록 끊임없이 노력하고 있습니다. 네이버의 다양한 프로젝트와 노하우를 공유하는 자리에 기
+searchcolloquium.naver.com
+여러 신기술을 볼 수 있어서 너무 즐거웠고 이중에 Future AI [OmniSearch] Putting Image and Text All Together, Image Translation in Papago 부분이 아주 흥미로웠다.
+
+검색을 할때 사람들이 생각하는 어느 드라마에서 나왔던 신발 or 이 신발과 비슷한데 색이 검은색 빨간색 섞인 것과 같은 검색어를 정확도가 높게 찾아내는 것과 여러 가지 intent를 유연하게 합쳐서 검색할 수 있는 방법이 신기했고 image translation 부분에서는 image 번역 기능은 이미 나와있고 이를 이용해 본적도 많이 있지만 여기서 더 나아가 AR 기술과 접목하여 사용 가능할 수 있게 트래픽 개 선도하면서 준비 중이라는 것을 듣고 멀지 않은 미래에 이런 기술이 상용화되고 네이버 글라스 같은 웨어러블 보조기기가 있어서 연동이 된다면 실생활에서 정말 유용한 기술이 되지 않을까 생각했다.
+직접 개발에 참여하고 싶을 정도로 흥미로운 내용이었다.
+
+내일 할 일
+1. 백준 알고리즘 문제 풀기
+
+2. RoutineWave 프로젝트 사용자 일정 등록 CRUD 백엔드 기능 구현
