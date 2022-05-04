@@ -1,0 +1,12 @@
+오늘 한 일 (회고)
+1. 백준 알고리즘 문제 풀이
+-  1026
+
+2. RoutineWave 프로젝트 DRF 학습 중
+[DRF] 장고 REST Framework란? 그리고 Serialization
+처음에 DRF라는 이야기를 들었을 때 Django Rest Framework라고 하여 장고로 이루어진 것을 단순히 Restful 하게 만들어 줄 수 있게 하는 단순한 패키지라고 생각하였는데 동작하는 방식에서 다른 점이
+
+내일 할 일
+1. 백준 알고리즘 문제 풀기
+
+2. RoutineWave 프로젝트 사용자 일정 등록 CRUD 백엔드 기능 구현
