@@ -1,0 +1,30 @@
+오늘 한 일 (회고)
+1. 백준 알고리즘 문제 풀이
+-  1541
+
+2. Django rest framework custom permission 학습중
+
+In the snippets app, create a new file, permissions.py
+from rest_framework import permissions
+
+class IsOwnerOrReadOnly(permissions.BasePermission):
+    """
+    Custom permission to only allow owners of an object to edit it.
+    """
+
+    def has_object_permission(self, request, view, obj):
+        # Read permissions are allowed to any request,
+        # so we'll always allow GET, HEAD or OPTIONS requests.
+        if request.method in permissions.SAFE_METHODS:
+            return True
+
+        # Write permissions are only allowed to the owner of the snippet.
+        return obj.owner == request.user
+rest_framework 안에 있는 permissions 패키지를 import 해서 사용하며 상속 받은 내용의 일부를 수정하여 사용하는 방식으로 사용한다.
+
+원하는 방식으로 작동을 안해서 여러가지 변경을 하면서 시도해 보는중
+
+내일 할 일
+1. 백준 알고리즘 문제 풀기
+
+2. 프로젝트 API 기술서 다시 손보기
