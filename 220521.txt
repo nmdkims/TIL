@@ -1,0 +1,19 @@
+오늘 한 일 (회고)
+1. 백준 알고리즘 문제 풀이
+-  10998
+
+2. 캘린더 관련 api 구성 완료
+
+3. CORS 문제 해결 - 밑의 내용 참고하여 proxy를 이용하여 해결
+https://snowdeer.github.io/openshift/2020/06/13/react-for-cors-using-proxy/
+React CORS 문제 해결하기(Proxy 이용) · snowdeer's Code Holic
+
+4. 템플릿 저장용 모델 추가 완료
+
+내일 할 일
+1. 백준 알고리즘 문제 풀기
+
+2. 프런트 엔드 배포
+
+3. Mypage 스탯 내용 연계
+
