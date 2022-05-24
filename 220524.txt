@@ -1,0 +1,21 @@
+오늘 한 일 (회고)
+1. 백준 알고리즘 문제 풀이
+-  9184
+
+2. GraphQL 개념 학습
+
+3. 백엔드 기본 학습 내용 정리
+- Serializer란??
+- DB RDBMS의 한계와 NoSQL을 사용하는 이유
+- Dynamic Programming이란
+- Stack이나 Queue를 사용하는 이유
+등
+
+내일 할 일
+1. 백준 알고리즘 문제 풀기
+
+2. 블로그 깃허브 정비
+
+3. Udemy 알고리즘 강의 학습 시작
+
+4. RoutineWave 프로젝트 Developing
