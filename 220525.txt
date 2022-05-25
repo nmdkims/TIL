@@ -1,0 +1,17 @@
+1. 백준 알고리즘 문제 풀이
+-  1149
+
+2. 프로젝트 Develop진행
+- Toast UI 예제 학습
+https://nhn.github.io/tui.chart/latest/
+
+3. Schedule 모델 일부 변경
+
+4. Udemy 알고리즘 강의 학습 시작
+
+내일 할 일
+1. 백준 알고리즘 문제 풀기
+
+2. Udemy 알고리즘 강의 학습 시작
+
+3. RoutineWave 프로젝트 Developing
