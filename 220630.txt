@@ -1,0 +1,21 @@
+오늘 한 일 (회고)
+1. 원티드 프리온 보딩 과제
+- Scraper 구성
+https://github.com/pre-onboarding-3rd-team-H/01_LapQ_TeamH/commit/d2d4ec1def67eead4b616e5d26a4280b9f62b7ae
+Feat:#4#9 Open API 과거 데이터 DB에 저장 · pre-onboarding-3rd-team-H/01_LapQ_TeamH@d2d4ec1
+- 요청 테스트 완료 - data_guname 추가를 위한 함수 추가 - data_rainfall 데이터 저장을 위한 함수 추가 - data_sewerpipe 데이터 저장을 위한 함수 추가 - 데이터 테이블 초기화를 위한 함수 추가
+
+2. DRF 특강
+- 특강 복습이 늦어지고 있음
+
+3. 프로그래머스
+- 음양 더하기
+내일 할 일
+1. 프로그래머스 알고리즘 풀기
+
+2. 애니멀 로드 프로젝트
+- Spawner 불합리성 개선
+- 링 오브젝트 뛰어넘으면서 먹는 것 구현
+- 스테이지 마지막에 다음 스테이지로 넘어가는 연출 구현
+
+* 조금 더 큰 집중력이 필요한 시점이라고 생각이 듭니다.
