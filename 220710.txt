@@ -1,0 +1,20 @@
+오늘 한 일 (회고)
+1. 프로그래머스 문제풀이
+-  LV2 타깃 넘버
+
+2. 개인 프로젝트 쇼핑몰 프로젝트 시작
+- 초기 개발 세팅 완료
+https://github.com/nmdkims/nmdkims_shoppingmall
+GitHub - nmdkims/nmdkims_shoppingmall: DRF를 이용한 쇼핑몰 API 개인 프로젝트 입니다. 모든 코드 컨벤션과
+
+3. 애니멀 로드 프로젝트
+- Spawner spawn 패턴 수정
+
+
+내일 할 일
+1. 프로그래머스 알고리즘 풀기
+
+2. 3번째 프리온보딩 과제 시작
+
+
+
