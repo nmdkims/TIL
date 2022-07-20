@@ -9,9 +9,9 @@ def deco_parsing(function):
         data = requests.get(urls[-1])
         print("data : ", data)
         html = data.text
-        print("html : ", data)
+        print("html : ", html)
         soup = BeautifulSoup(html, 'html.parser')
-        print("soup : ", data)
+        print("soup : ", soup)
         return function(soup)
 
     return parsing
@@ -49,7 +49,7 @@ def extract_post_tag(soup):
 
 print(extract_post_title(urls))
 
-
-https://dawnpast12.tistory.com/entry/220214TIL?category=1032066
-https://dawnpast12.tistory.com/entry/220213TIL?category=1032066
-https://dawnpast12.tistory.com/entry/220211TIL?category=1032066
+#
+# https://dawnpast12.tistory.com/entry/220214TIL?category=1032066
+# https://dawnpast12.tistory.com/entry/220213TIL?category=1032066
+# https://dawnpast12.tistory.com/entry/220211TIL?category=1032066
