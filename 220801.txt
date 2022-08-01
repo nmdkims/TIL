@@ -1,0 +1,27 @@
+오늘 한 일 (회고)
+1. 프로그래머스
+-  LV1 1차 지도
+
+** LV1 문제지만 시간이 생각보다 오래걸려서 풀이중
+
+def solution(n, arr1, arr2):
+    answer = []
+    cnt = 0
+    for i, j in zip(arr1, arr2):
+        for k in range(n):
+            if i >= 2 ** (n - 1 - k):
+                i -= 2 ** (n - 1 - k)
+                answer[cnt][n - 1 - k] = "#"
+            if j >= 2 ** (n - 1 - k):
+                j -= 2 ** (n - 1 - k)
+                answer[cnt][n - 1 - k] = "#"
+        cnt += 1
+
+    return answer
+
+2. 개인 과제 마무리중
+
+내일 할 일
+1. 백준 알고리즘 문제 풀기
+
+2. 블로그 깃허브 정비
