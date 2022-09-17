@@ -1,0 +1,70 @@
+TIL
+알고리즘 공부를 계속해오다가 등의 개념과 자료구조들을 한 번씩 다시 복습하는 것도 도움이 많이 될 것으로 생각하여 복습하는 시간을 가졌다.
+
+시간 복잡도 코드가 실행될 때 걸리는 시간의 복잡도 상수의 변화량보다는 지수의 변화량에 집중하여 판단할 것
+공간 복잡도 해당 코드가 사용하는 물리적인 공간의 크기를 나타내어 보는 것 시간 복잡도와 효율에 크게 영향을 미칠지 생각해보면 시간 복잡도가 더 큰 영향을 줄 때가 많다.
+그리고 이렇게 효율성을 평가할 때 점근 표기법이라는 것을 사용하게 되고 보통은 최악의 성능이 나올 때의 경우를 생각하는 빅오 표기법으로 표현을 한다.
+
+
+이것 이외에 기초적인 내용을 복습하였으며 그중에서
+
+소수의 판별 에라토스테네스의 체를 이용하여 다이내믹 프로그래밍을 생각해서 다시 코드 구성을 해보았고
+
+def find_prime_list_under_number(number):
+    check_array = [i for i in range(2, number + 1)]
+    for check in check_array:
+        for j in range(2, number // check + 1):
+            if check * j in check_array:
+                check_array.remove(check * j)
+
+    return check_array
+아스키코드를 이용한 문자열 판별
+
+def find_not_repeating_character(string):
+    alphabet_check_array = [0]*26
+    check_answer_array =[]
+    for s in string:
+        ascii_s = ord(s) - ord("a")
+        alphabet_check_array[ascii_s] += 1
+
+    for i, alpha in enumerate(alphabet_check_array):
+        if alpha == 1:
+            check_answer_array.append(chr(i + ord("a")))
+
+    for check in string:
+        for check_array in check_answer_array:
+            if check_array == check:
+                return check
+
+    return '_'
+링크드 리스트 자료구조를 직접 구현
+
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+
+class LinkedList:
+    def __init__(self, value):
+        self.head = Node(value)
+
+    def append(self, value):
+        cur = self.head
+        if cur.data == None:
+            cur.data = value
+
+        while cur.next is not None:
+            cur = cur.next
+        cur.next = Node(value)
+
+    def print_all(self):
+        cur = self.head
+        while cur.next is not None:
+            print(cur.data)
+등을 다시 해보았다.
+
+
+
+추가적으로 코딩 테스트 문제 학습을 진행
+
+* 양궁대회
