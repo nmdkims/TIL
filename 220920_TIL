@@ -1,0 +1,55 @@
+TIL
+스택 등 자료구조를 직접 구현해보았음
+해당 문제 관련하여 최근에 수행한 코딩 테스트에서 문제로 나왔었는데 stack에 내용이 없을 때의 예외처리 같은 것을 길이를 기준으로 하여 너무 생각 없이 했다는 것을 느낌
+
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+
+
+class Stack:
+    def __init__(self):
+        self.head = None
+
+    def push(self, value):
+        if self.is_empty():
+            new_head = Node(value)
+            self.head = new_head
+
+        new_head = Node(value)
+        new_head.next = self.head
+        self.head = new_head
+        return
+
+    # pop 기능 구현
+    def pop(self):
+        if self.is_empty():
+            return "Stack is Empty"
+        delete_head = self.head
+        self.head = self.head.next
+        return  delete_head
+
+    def peek(self):
+        if self.is_empty():
+            return "Stack is Empty"
+        return self.head.data
+
+    # isEmpty 기능 구현
+    def is_empty(self):
+        return self.head is None
+
+stack = Stack()
+stack.push(3)
+print(stack.peek())
+이런 알고리즘 학습 이외에 CORS, Nginx, Web server, WAS, Docker 등의 개념에 대해서도 복습하는 시간을 가졌고 토큰과 관련된 내용을 다시 학습하던 중 막연하게 token 사용하던 것에 대해서 조금 더 깊게 생각해보게 되었음
+
+https://dawnpast12.tistory.com/entry/%EC%83%9D%EA%B0%81-Session-JWT-token-%ED%95%AD%EC%83%81-jwt%EA%B0%80-%EC%98%B3%EC%9D%84%EA%B9%8C
+[생각] Session, JWT token 항상 jwt가 옳을까?
+프로젝트를 진행하다보면 인가 방식에대해서 세션방식을 사용하게 될지 토큰 방식을 사용하게 될지에 대해서 결정하고 커스텀하는 경우를 거치게 된다. 장고 프로젝트의 기본 인증, 인가방식
+dawnpast12.tistory.com
+
+자료구조에 대한 기본 학습 복습
+
+* 추가 학습 프로그래머스 문제풀이
+주식 가격
